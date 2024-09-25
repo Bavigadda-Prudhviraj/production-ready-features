@@ -1,0 +1,1 @@
+INSERT INTO post (id, title, description) VALUES (153, 'Post Title', 'This is an extended description that provides detailed information about the post. You can add more content here, up to the specified length limit of 5000 characters. Include any relevant details, context, or background information that would be useful for readers.');
