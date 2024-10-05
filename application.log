@@ -1,0 +1,172 @@
+2024-10-05T21:25:30.286+05:30  INFO 11876 --- [production-ready-features] [main] o.s.boot.SpringApplication               : 
+ ____                 _                    _      _             ____                    _  _            _               _
+| __ )   __ _ __   __(_)  __ _   __ _   __| |  __| |  __ _     |  _ \  _ __  _   _   __| || |__ __   __(_) _ __  __ _  (_)
+|  _ \  / _` |\ \ / /| | / _` | / _` | / _` | / _` | / _` |    | |_) || '__|| | | | / _` || '_ \\ \ / /| || '__|/ _` | | |
+| |_) || (_| | \ V / | || (_| || (_| || (_| || (_| || (_| |    |  __/ | |   | |_| || (_| || | | |\ V / | || |  | (_| | | |
+|____/  \__,_|  \_/  |_| \__, | \__,_| \__,_| \__,_| \__,_|    |_|    |_|    \__,_| \__,_||_| |_| \_/  |_||_|   \__,_|_/ |
+                         |___/                                                                                       |__/
+
+2024-10-05T21:25:30.335+05:30  INFO 11876 --- [production-ready-features] [main] .ProductionReadyFeaturesApplicationTests : Starting ProductionReadyFeaturesApplicationTests using Java 22.0.2 with PID 11876 (started by bavig in D:\Prudhviraj_Study\All Projects\codeShuttle\0-1\production-ready-features)
+2024-10-05T21:25:30.351+05:30  INFO 11876 --- [production-ready-features] [main] .ProductionReadyFeaturesApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-10-05T21:25:31.171+05:30  INFO 11876 --- [production-ready-features] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05T21:25:31.251+05:30  INFO 11876 --- [production-ready-features] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/callback' ...
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528 ...
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to resolve location classpath:db/callback.
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/migration' ...
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528 ...
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning URL: file:/D:/Prudhviraj_Study/All%20Projects/codeShuttle/0-1/production-ready-features/target/classes/db/migration
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning starting at classpath root in filesystem: D:\Prudhviraj_Study\All Projects\codeShuttle\0-1\production-ready-features\target\classes\
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning for resources in path: D:\Prudhviraj_Study\All Projects\codeShuttle\0-1\production-ready-features\target\classes\db\migration (db/migration)
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V1.1.0__Insert_into_post.sql
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classes at classpath:db/migration
+2024-10-05T21:25:32.068+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V1.1.0__Insert_into_post.sql
+2024-10-05T21:25:32.084+05:30  INFO 11876 --- [production-ready-features] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-05T21:25:32.540+05:30  INFO 11876 --- [production-ready-features] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59918c8f
+2024-10-05T21:25:32.540+05:30  INFO 11876 --- [production-ready-features] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-05T21:25:32.602+05:30  INFO 11876 --- [production-ready-features] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/production-ready-features (MySQL 8.0)
+2024-10-05T21:25:32.602+05:30 DEBUG 11876 --- [production-ready-features] [main] org.flywaydb.core.FlywayExecutor         : Driver: MySQL Connector/J mysql-connector-j-8.3.0 (Revision: 805f872a57875f311cb82487efcfb070411a3fa0)
+2024-10-05T21:25:32.602+05:30 DEBUG 11876 --- [production-ready-features] [main] org.flywaydb.core.FlywayExecutor         : DDL Transactions Supported: false
+2024-10-05T21:25:32.602+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.SchemaHistoryFactory           : Schemas: 
+2024-10-05T21:25:32.602+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.s.SchemaHistoryFactory           : Default schema: null
+2024-10-05T21:25:32.618+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.i.c.SqlScriptCallbackFactory       : Scanning for SQL callbacks ...
+2024-10-05T21:25:32.634+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.core.internal.command.DbValidate     : Validating migrations ...
+2024-10-05T21:25:32.634+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2024-10-05T21:25:32.649+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1.1.0__Insert_into_post.sql (filename: V1.1.0__Insert_into_post.sql)
+2024-10-05T21:25:32.649+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1.1.0__Insert_into_post.sql (filename: V1.1.0__Insert_into_post.sql)
+2024-10-05T21:25:32.665+05:30  INFO 11876 --- [production-ready-features] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.036s)
+2024-10-05T21:25:32.681+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.core.internal.command.DbSchemas      : Skipping creation of existing schema: `production-ready-features`
+2024-10-05T21:25:32.696+05:30 DEBUG 11876 --- [production-ready-features] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2024-10-05T21:25:32.696+05:30  INFO 11876 --- [production-ready-features] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `production-ready-features`: 1.1.0
+2024-10-05T21:25:32.696+05:30  INFO 11876 --- [production-ready-features] [main] o.f.core.internal.command.DbMigrate      : Schema `production-ready-features` is up to date. No migration necessary.
+2024-10-05T21:25:32.712+05:30 DEBUG 11876 --- [production-ready-features] [main] org.flywaydb.core.FlywayExecutor         : Memory usage: 37 of 74M
+2024-10-05T21:25:32.835+05:30  INFO 11876 --- [production-ready-features] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05T21:25:32.929+05:30  INFO 11876 --- [production-ready-features] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05T21:25:32.988+05:30  INFO 11876 --- [production-ready-features] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-05T21:25:33.087+05:30  INFO 11876 --- [production-ready-features] [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-10-05T21:25:33.352+05:30  INFO 11876 --- [production-ready-features] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05T21:25:33.664+05:30  INFO 11876 --- [production-ready-features] [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.prudhviraj.production_ready_features.production_ready_features.entities.Post
+2024-10-05T21:25:34.528+05:30 ERROR 11876 --- [production-ready-features] [main] o.h.metamodel.internal.MetadataContext   : HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2024-10-05T21:25:34.544+05:30  INFO 11876 --- [production-ready-features] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05T21:25:34.606+05:30  INFO 11876 --- [production-ready-features] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05T21:25:35.266+05:30  WARN 11876 --- [production-ready-features] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-05T21:25:35.753+05:30  INFO 11876 --- [production-ready-features] [main] .ProductionReadyFeaturesApplicationTests : Started ProductionReadyFeaturesApplicationTests in 5.84 seconds (process running for 6.966)
+2024-10-05T21:25:36.392+05:30 ERROR 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Error log
+2024-10-05T21:25:36.392+05:30  WARN 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Warn log
+2024-10-05T21:25:36.392+05:30  INFO 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Info log
+2024-10-05T21:25:36.392+05:30 DEBUG 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Debug log
+2024-10-05T21:25:36.392+05:30 TRACE 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Trace log
+2024-10-05T21:25:37.913+05:30 DEBUG 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Successfully retrieved the employees in getAllEmployees
+2024-10-05T21:25:37.913+05:30 TRACE 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Retrieved employees list in getAllEmployees : [TodoDto(userId=3, id=1, title=Buy groceries, completed=false), TodoDto(userId=5, id=2, title=Go for a walk, completed=true), TodoDto(userId=1, id=3, title=Finish homework, completed=false), TodoDto(userId=7, id=4, title=Read a book, completed=true), TodoDto(userId=2, id=5, title=Pay bills, completed=false), TodoDto(userId=4, id=6, title=Call a friend, completed=true), TodoDto(userId=6, id=7, title=Clean the house, completed=false), TodoDto(userId=9, id=8, title=Go to the gym, completed=true), TodoDto(userId=8, id=9, title=Write a report, completed=false), TodoDto(userId=2, id=10, title=Cook dinner, completed=true), TodoDto(userId=1, id=11, title=Study for exams, completed=false), TodoDto(userId=3, id=12, title=Do laundry, completed=true), TodoDto(userId=5, id=13, title=Practice guitar, completed=false), TodoDto(userId=7, id=14, title=Plan a trip, completed=true), TodoDto(userId=9, id=15, title=Attend a meeting, completed=false), TodoDto(userId=6, id=16, title=Water the plants, completed=true), TodoDto(userId=4, id=17, title=Fix the car, completed=false), TodoDto(userId=8, id=18, title=Watch a movie, completed=true), TodoDto(userId=10, id=19, title=Visit the museum, completed=false), TodoDto(userId=1, id=20, title=Send an email, completed=true)], Hello, 5
+2024-10-05T21:25:37.929+05:30  INFO 11876 --- [production-ready-features] [main] .ProductionReadyFeaturesApplicationTests : Fetched details : [TodoDto(userId=3, id=1, title=Buy groceries, completed=false), TodoDto(userId=5, id=2, title=Go for a walk, completed=true), TodoDto(userId=1, id=3, title=Finish homework, completed=false), TodoDto(userId=7, id=4, title=Read a book, completed=true), TodoDto(userId=2, id=5, title=Pay bills, completed=false), TodoDto(userId=4, id=6, title=Call a friend, completed=true), TodoDto(userId=6, id=7, title=Clean the house, completed=false), TodoDto(userId=9, id=8, title=Go to the gym, completed=true), TodoDto(userId=8, id=9, title=Write a report, completed=false), TodoDto(userId=2, id=10, title=Cook dinner, completed=true), TodoDto(userId=1, id=11, title=Study for exams, completed=false), TodoDto(userId=3, id=12, title=Do laundry, completed=true), TodoDto(userId=5, id=13, title=Practice guitar, completed=false), TodoDto(userId=7, id=14, title=Plan a trip, completed=true), TodoDto(userId=9, id=15, title=Attend a meeting, completed=false), TodoDto(userId=6, id=16, title=Water the plants, completed=true), TodoDto(userId=4, id=17, title=Fix the car, completed=false), TodoDto(userId=8, id=18, title=Watch a movie, completed=true), TodoDto(userId=10, id=19, title=Visit the museum, completed=false), TodoDto(userId=1, id=20, title=Send an email, completed=true)]
+2024-10-05T21:25:37.929+05:30 ERROR 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Error log
+2024-10-05T21:25:37.930+05:30  WARN 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Warn log
+2024-10-05T21:25:37.930+05:30  INFO 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Info log
+2024-10-05T21:25:37.930+05:30 DEBUG 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Debug log
+2024-10-05T21:25:37.930+05:30 TRACE 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Trace log
+2024-10-05T21:25:38.416+05:30 DEBUG 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Successfully retrieved the employees in getAllEmployees
+2024-10-05T21:25:38.416+05:30 TRACE 11876 --- [production-ready-features] [main] c.p.p.p.clients.impl.EmployeeClientImpl  : Retrieved employees list in getAllEmployees : [TodoDto(userId=3, id=1, title=Buy groceries, completed=false), TodoDto(userId=5, id=2, title=Go for a walk, completed=true), TodoDto(userId=1, id=3, title=Finish homework, completed=false), TodoDto(userId=7, id=4, title=Read a book, completed=true), TodoDto(userId=2, id=5, title=Pay bills, completed=false), TodoDto(userId=4, id=6, title=Call a friend, completed=true), TodoDto(userId=6, id=7, title=Clean the house, completed=false), TodoDto(userId=9, id=8, title=Go to the gym, completed=true), TodoDto(userId=8, id=9, title=Write a report, completed=false), TodoDto(userId=2, id=10, title=Cook dinner, completed=true), TodoDto(userId=1, id=11, title=Study for exams, completed=false), TodoDto(userId=3, id=12, title=Do laundry, completed=true), TodoDto(userId=5, id=13, title=Practice guitar, completed=false), TodoDto(userId=7, id=14, title=Plan a trip, completed=true), TodoDto(userId=9, id=15, title=Attend a meeting, completed=false), TodoDto(userId=6, id=16, title=Water the plants, completed=true), TodoDto(userId=4, id=17, title=Fix the car, completed=false), TodoDto(userId=8, id=18, title=Watch a movie, completed=true), TodoDto(userId=10, id=19, title=Visit the museum, completed=false), TodoDto(userId=1, id=20, title=Send an email, completed=true)], Hello, 5
+2024-10-05T21:25:38.432+05:30  INFO 11876 --- [production-ready-features] [main] .ProductionReadyFeaturesApplicationTests : [ {
+  "userId" : 3,
+  "id" : 1,
+  "title" : "Buy groceries",
+  "completed" : false
+}, {
+  "userId" : 5,
+  "id" : 2,
+  "title" : "Go for a walk",
+  "completed" : true
+}, {
+  "userId" : 1,
+  "id" : 3,
+  "title" : "Finish homework",
+  "completed" : false
+}, {
+  "userId" : 7,
+  "id" : 4,
+  "title" : "Read a book",
+  "completed" : true
+}, {
+  "userId" : 2,
+  "id" : 5,
+  "title" : "Pay bills",
+  "completed" : false
+}, {
+  "userId" : 4,
+  "id" : 6,
+  "title" : "Call a friend",
+  "completed" : true
+}, {
+  "userId" : 6,
+  "id" : 7,
+  "title" : "Clean the house",
+  "completed" : false
+}, {
+  "userId" : 9,
+  "id" : 8,
+  "title" : "Go to the gym",
+  "completed" : true
+}, {
+  "userId" : 8,
+  "id" : 9,
+  "title" : "Write a report",
+  "completed" : false
+}, {
+  "userId" : 2,
+  "id" : 10,
+  "title" : "Cook dinner",
+  "completed" : true
+}, {
+  "userId" : 1,
+  "id" : 11,
+  "title" : "Study for exams",
+  "completed" : false
+}, {
+  "userId" : 3,
+  "id" : 12,
+  "title" : "Do laundry",
+  "completed" : true
+}, {
+  "userId" : 5,
+  "id" : 13,
+  "title" : "Practice guitar",
+  "completed" : false
+}, {
+  "userId" : 7,
+  "id" : 14,
+  "title" : "Plan a trip",
+  "completed" : true
+}, {
+  "userId" : 9,
+  "id" : 15,
+  "title" : "Attend a meeting",
+  "completed" : false
+}, {
+  "userId" : 6,
+  "id" : 16,
+  "title" : "Water the plants",
+  "completed" : true
+}, {
+  "userId" : 4,
+  "id" : 17,
+  "title" : "Fix the car",
+  "completed" : false
+}, {
+  "userId" : 8,
+  "id" : 18,
+  "title" : "Watch a movie",
+  "completed" : true
+}, {
+  "userId" : 10,
+  "id" : 19,
+  "title" : "Visit the museum",
+  "completed" : false
+}, {
+  "userId" : 1,
+  "id" : 20,
+  "title" : "Send an email",
+  "completed" : true
+} ]
+2024-10-05T21:25:38.463+05:30  INFO 11876 --- [production-ready-features] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05T21:25:38.463+05:30  INFO 11876 --- [production-ready-features] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-05T21:25:38.479+05:30  INFO 11876 --- [production-ready-features] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

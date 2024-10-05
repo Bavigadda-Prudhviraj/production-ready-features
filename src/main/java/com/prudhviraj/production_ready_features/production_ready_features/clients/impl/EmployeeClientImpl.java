@@ -2,7 +2,8 @@ package com.prudhviraj.production_ready_features.production_ready_features.clien
 
 import com.prudhviraj.production_ready_features.production_ready_features.clients.EmployeeClient;
 import com.prudhviraj.production_ready_features.production_ready_features.dto.TodoDto;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatusCode;
@@ -10,14 +11,22 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import java.util.List;
 
-@Slf4j
+
 @Service
 public class EmployeeClientImpl implements EmployeeClient {
+    Logger log = LoggerFactory.getLogger(EmployeeClientImpl.class);
     @Autowired
     private RestClient restClient;
 
     @Override
     public List<TodoDto> getAllEmployees() {
+        //logging level in order
+        log.error("Error log");
+        log.warn("Warn log");
+        log.info("Info log");
+        log.debug("Debug log");
+        log.trace("Trace log");
+
         try {
          List<TodoDto> response = restClient.get()
                  .uri("todos")
@@ -33,6 +42,7 @@ public class EmployeeClientImpl implements EmployeeClient {
             log.trace("Retrieved employees list in getAllEmployees : {}, {}, {}", response, "Hello", 5);
             return response;
         } catch (Exception e) {
+            log.error("Exception occurred in getAllEmployees() {}",e);
             throw new RuntimeException(e.getMessage());
         }
     }
